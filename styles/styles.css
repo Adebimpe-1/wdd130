@@ -11,6 +11,8 @@ h1 {
     color: darkblue;
 }
 main img {
+    max-width: 100%;  
+    height: auto; 
     width: 150px;
     height: auto;
     border: 1px solid black;
@@ -18,22 +20,24 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 p {
+    margin: 0;
     padding: 0;
 }
 aside {
-    width:auto;
-    margin: auto; 
-    border: 0;
-    padding: 1px;
-    background-color:antiquewhite;
-    color:aquamarine;
+    max-width: 400px; 
+    margin: 20px;
+    border: 0; 
+    padding: 10px; 
+    background-color: antiquewhite;  
+    color: black;
 } 
 aside img {
     width: 200px;
     height: auto;
 }
-footer {
-    margin-top: center;
-    border-top: center;
-    text-align: center;
-}
+footer {  
+    margin-top: 20px;
+    border-top: 1px solid gray; 
+    text-align: center;  
+    padding: 10px 0; 
+    } 
