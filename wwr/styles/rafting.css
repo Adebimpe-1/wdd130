@@ -56,7 +56,7 @@ nav ul li a {
 }  
 
 h1 {  
-        position: relative;  
+        position: absolute;  
         color: var(--text-color);  
         font-size: 2.5em;  
         margin-top: 0;
