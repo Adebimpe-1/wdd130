@@ -1,9 +1,9 @@
 :root {  
-    --primary-color: #292929; /* Adjust this color */  
-    --secondary-color: #4F829A; /* Adjust this color */  
-    --accent-color: #D14339 ; /* Adjust this color */  
+    --primary-color: #292929; 
+    --secondary-color: #4F829A; 
+    --accent-color: #D14339; 
     --text-color: #040417;
-    --background-color: #858585; /* Text color */  
+    --background-color: #858585; 
 }  
 
 body {  
@@ -12,8 +12,8 @@ body {
     padding: 0;  
     background-color: var(--accent-color); 
     color: var(--text-color);  
-    max-width: 1200px; /* Limit the width for better design */  
-    margin: auto; /* Center the content */  
+    max-width: 1200px; 
+    margin: auto;
 }  
 
 header {  
@@ -25,7 +25,7 @@ header {
 }  
 
 .logo img {  
-    width: 150px; /* Adjust as needed */  
+    width: 150px; 
 }  
 
 nav ul {  
@@ -59,13 +59,12 @@ h1 {
         position: absolute;  
         color: var(--text-color);  
         font-size: 2.5em;  
-        margin-top: 0; /* Adjust this value to set the top margin */  
-        /* Adjust margin-top as needed, e.g., 0, 5px, or any other value */  
+        margin-top: 0;
     }    
 
 article {  
     position: absolute;  
-    bottom: 20px; /* Position at bottom */  
+    bottom: 20px; 
     left: 20px;  
     background-color: var(--text-color);  
     padding: 20px;  
@@ -76,21 +75,21 @@ article {
 .client-image {  
     float: right;  
     margin-left: 20px;  
-    width: 150px; /* Adjust width as needed */  
-    border-radius: 50%; /* Circle image */  
+    width: 150px; 
+    border-radius: 50%; 
 }  
 section {  
-    display: flex; /* Use flex to arrange children side by side */  
-    flex-wrap: wrap; /* Allow wrapping if necessary */  
-    justify-content: center; /* Center the images */  
-    gap: 10px; /* Space between images */  
-    padding: 20px; /* Optional padding for aesthetics */  
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px;
+    padding: 20px;
 }  
 
 section img {  
-    width: 80px; /* Set a fixed width for each image */  
-    height: auto; /* Maintain aspect ratio */  
-    border-radius: 5px; /* Optional: Slightly round the corners */  
+    width: 80px; 
+    height: auto; 
+    border-radius: 5px; 
 }  
 
 h2 {  
@@ -114,27 +113,28 @@ footer a {
 }  
 
 footer img {  
-    width: 30px; /* Adjust icon size as needed */  
+    width: 30px; 
 }  
 footer ul.social-media {  
-    list-style: none; /* Remove default list styles */  
-    padding: 0; /* Remove default padding */  
-    display: flex; /* Flex to layout the items in a row */  
-    justify-content: center; /* Center the list */  
-    align-items: center; /* Center vertically */  
+    list-style: none;  
+    padding: 0;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }  
 
 footer li {  
     color: #360c09;
-    margin: 0 10px; /* Space between list items */  
+    margin: 0 10px; 
 }  
 
 footer img {  
-    width: 20px; /* Small icon size as requested */  
-    height: 20px; /* Option to enforce a height */  
-    vertical-align: middle; /* Align image with text */  
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle; 
 }  
 
 footer span {  
-    font-size: 14px; /* Adjust text size as needed */  
-    margin-right: 5px; }/* Space between text
+    font-size: 14px;  
+    margin-right: 5px; 
+}
