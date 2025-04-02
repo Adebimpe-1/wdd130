@@ -10,7 +10,7 @@ body {
     font-family: 'Caveat', 'Lobster';  
     margin: 0;  
     padding: 0;  
-    background-color: (--accent-color); /* Light background color */  
+    background-color: var(--accent-color); 
     color: var(--text-color);  
     max-width: 1200px; /* Limit the width for better design */  
     margin: auto; /* Center the content */  
@@ -57,7 +57,7 @@ nav ul li a {
 
 h1 {  
         position: absolute;  
-        color: (--text-color);  
+        color: var(--text-color);  
         font-size: 2.5em;  
         margin-top: 0; /* Adjust this value to set the top margin */  
         /* Adjust margin-top as needed, e.g., 0, 5px, or any other value */  
@@ -67,7 +67,7 @@ article {
     position: absolute;  
     bottom: 20px; /* Position at bottom */  
     left: 20px;  
-    background-color: (--text-color);  
+    background-color: var(--text-color);  
     padding: 20px;  
     border-radius: 8px;  
     color: var(--text-color);  
