@@ -66,6 +66,7 @@ nav ul li a {
 }  
 
 .hero h1 {  
+        font-family: 'Abel', sans-serif;
         position: relative;  
         color: var(--text-color);  
         font-size: 2em;
@@ -114,6 +115,7 @@ article {
 }  
 
 h2 {  
+    font-family: 'Abel', sans-serif;
     color: var(--text-color);  
     text-align: center;  
 }  
