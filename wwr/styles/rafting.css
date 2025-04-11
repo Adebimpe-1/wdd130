@@ -1,3 +1,13 @@
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.abel-regular {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 :root {  
     --primary-color: #292929; 
     --secondary-color: #4F829A; 
@@ -11,35 +21,34 @@ body {
     margin: 0;  
     padding: 0;  
     background-color: var(--primary-color); 
-    color: var(--text-color);  
-    max-width: 1200px; 
-    margin: auto;
+    color: var(--text-color);
 }  
 
-header {  
+header {
+    display: grid;    
     background-color: var(--text-color);  
-    padding: 20px;  
-    display: flex;  
+    padding: 20px;
+    grid-template-columns: auto 1fr;
     align-items: center;  
     justify-content: space-between;  
 }  
 
 .logo img {  
-    width: 150px; 
+    width: 100px; 
 }  
 
 nav ul {  
-    list-style: none;  
-    padding: 0;  
+    list-style: none;
+    display: flex; 
+    justify-content: flex-end;   
 }  
 
 nav ul li {  
-    display: inline;  
-    margin: 0 15px;  
+    margin: 0 10px;  
 }  
 
 nav ul li a {  
-    color: #360c09;  
+    color: #a1c0ce;  
     text-decoration: none;  
 }  
 
@@ -52,14 +61,14 @@ nav ul li a {
     font-size: larger; 
     align-items: center;  
     justify-content: center;  
-    text-align: center;  
+    text-align: center; 
+    padding: 40px 20px; 
 }  
 
-h1 {  
-        position: absolute;  
+.hero h1 {  
+        position: relative;  
         color: var(--text-color);  
-        font-size: 2.5em;  
-        margin-top: 0;
+        font-size: 2em;
     }    
 
 article {  
@@ -73,67 +82,102 @@ article {
 
 .client-image {  
     float: right;  
-    margin-left: 20px;  
-    width: 150px; 
+    margin-left: 50px;  
+    max-width: 100%; 
     border-radius: 50%; 
 }  
-section {  
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 10px;
-    padding: 20px;
+.history {  
+    background-color: #dae3e7;  
+    padding: 20px;  
 }  
 
-section img {  
-    width: 80px; 
-    height: auto; 
-    border-radius: 5px; 
+.history-content {  
+    display: grid;  
+    grid-template-columns: auto 1fr auto; 
+    gap: 20px;  
+}  
+
+.image-container:hover {  
+    display: flex; 
+    justify-content: center;   
+    align-items: center;
+}
+
+.history-img {  
+    width: 150px;   
+    max-width: 250px;  
+    height: auto;   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s; 
+    transform: scale(1.1);
 }  
 
 h2 {  
     color: var(--text-color);  
+    text-align: center;  
+}  
+.Adventure {  
+    padding: 20px;  
+}  
+
+.Adventure-h2 {  
+    text-align: center;  
+}  
+
+.Adventure-gallery {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));  
+    gap: 20px;  
+}  
+
+.Adventure-gallery figure {  
+    text-align: center;  
+}  
+
+.Adventure-gallery img {    
+    width: 100%;  
+}  
+
+.Adventure-gallery figcaption {   
+    font-size: 0.9em;  
 }  
 
 footer {  
     background-color: var(--background-color);  
     color: #fff;  
     text-align: center;  
-    padding: 10px 0;  
+    padding: 10px 0;
+    position: relative;  
 }  
 
-footer p {  
-    margin: 5px 0;  
+footer p {
+    margin: 0;
+}
+
+footer ul.social-media {  
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;  
 }  
 
-footer a {  
-    margin: 0 10px;  
-    display: inline-block;  
+footer ul.social-media li {  
+    margin-left: 15px;  
+    display: flex; 
+    align-items: center; 
 }  
 
 footer img {  
     width: 30px; 
+    height: auto;
+    margin-right: 5px;
 }  
-footer ul.social-media {  
-    list-style: none;  
-    padding: 0;  
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}  
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
 
-footer li {  
-    color: #360c09;
-    margin: 0 10px; 
-}  
-
-footer img {  
-    width: 20px; 
-    height: 20px; 
-    vertical-align: middle; 
-}  
-
-footer span {  
-    font-size: 14px;  
-    margin-right: 5px; 
+footer a:hover {
+    text-decoration: underline;
 }
