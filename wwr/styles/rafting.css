@@ -9,11 +9,11 @@
     font-style: normal;
 }
 :root {  
-    --primary-color: #292929; 
+    --primary-color: #f5f1f1; 
     --secondary-color: #4F829A; 
     --accent-color: #D14339; 
     --text-color: #040417;
-    --background-color: #858585; 
+    --background-color: #5f5e5e; 
 }  
 
 body {  
@@ -181,4 +181,47 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+.company-info p {  
+    font-size: 1.2em;  
+}  
+.employees {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: left;   
+}  
+
+h3 {
+    font-size: 1.5em;
+}
+
+.employees figure { 
+    display: inline-block;
+    padding: 50px;  
+    margin: 10px;  
+    width: 150px;
+    text-align: center; 
+} 
+
+form {  
+    margin-top: 20px;  
+}  
+
+label[for="inquiry"] {  
+    display: block;
+    margin-top: 10px; 
+}
+label[for="message"] {  
+    display: block; 
+}  
+
+textarea {  
+    vertical-align: top; 
+}  
+iframe {  
+    filter: brightness(0.8);
+}  
+.newsletter-subscription {  
+    display: block; 
+    margin-top: 10px;
 }
