@@ -39,7 +39,7 @@ header {
     display: grid;    
     background-color: var(--text-color);  
     padding: 20px;
-    grid-templatwe-columns: auto 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;  
     justify-content: space-between;  
 }  
@@ -92,11 +92,11 @@ h1 {
     font-size: 4em;
 }    
 
-.hero h1 {  
+.hero h2 {  
     font-family:  'Caveat', 'Lobster';
     position: relative;
     color: var(--text-color);
-    font-size: 2em;
+    font-size: 1.5em;
     }    
 
 article {  
