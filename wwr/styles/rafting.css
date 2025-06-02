@@ -9,26 +9,37 @@
     font-style: normal;
 }
 :root {  
-    --primary-color: #f5f1f1; 
-    --secondary-color: #4F829A; 
-    --accent-color: #D14339; 
-    --text-color: #040417;
-    --background-color: #5f5e5e; 
+    --primary-color: #f5f1f1;/* warm white */
+    --secondary-color: #4F829A; /* chalk blue */
+    --accent-color: #D14339; /* bright red */
+    --text-color: #040417;/* jet black */
+    --background-color: #5f5e5e; /* grey */
+    --heading-font:"Abel", "sans-serif";
+    --body-font: 'Caveat', 'Lobster';
 }  
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {  
-    font-family: 'Caveat', 'Lobster';  
+    font-family: var(--body-font);  
     margin: 0;  
     padding: 0;  
     background-color: var(--primary-color); 
     color: var(--text-color);
 }  
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
 
 header {
     display: grid;    
     background-color: var(--text-color);  
     padding: 20px;
-    grid-template-columns: auto 1fr;
+    grid-templatwe-columns: auto 1fr;
     align-items: center;  
     justify-content: space-between;  
 }  
@@ -36,6 +47,11 @@ header {
 .logo img {  
     width: 100px; 
 }  
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
 
 nav ul {  
     list-style: none;
@@ -54,7 +70,7 @@ nav ul li a {
 
 .hero {  
     position: relative;  
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNKb0Ywx_4ALS3-ht7q6JxXJeAt8aATLTGYA2HKEpj55xu8tEmExGiCl8&s'); 
+    background-image: url('https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting60_1024.jpg'); 
     background-size: cover;  
     height: 300px; 
     display: flex; 
@@ -65,11 +81,22 @@ nav ul li a {
     padding: 40px 20px; 
 }  
 
+h1 {  
+     position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    position: relative;  
+    color: var(--text-color);  
+    font-size: 4em;
+}    
+
 .hero h1 {  
-        font-family: 'Abel', sans-serif;
-        position: relative;  
-        color: var(--text-color);  
-        font-size: 2em;
+    font-family:  'Caveat', 'Lobster';
+    position: relative;
+    color: var(--text-color);
+    font-size: 2em;
     }    
 
 article {  
@@ -81,8 +108,11 @@ article {
     color: var(--text-color);  
 }  
 
-.client-image {  
-    float: right;  
+.client-image { 
+    display: block;
+    height: auto; 
+    float: right; 
+    width: 125px; 
     margin-left: 50px;  
     max-width: 100%; 
     border-radius: 50%; 
@@ -180,7 +210,7 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 .company-info p {  
     font-size: 1.2em;  
