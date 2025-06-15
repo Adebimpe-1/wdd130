@@ -41,23 +41,23 @@
         <div class="employees">  
             <h3>Meet Our Team</h3>  
             <figure>  
-                <img src="images\happy-employee-2.jpeg" alt="Employee 1">  
+                <img src="images/happy-employee-2.jpeg" alt="Employee 1">  
                 <figcaption>John Doe - Director </figcaption>  
             </figure>  
             <figure>  
-                <img src="images\happy-employee-1.jpeg" alt="Employee 2">  
+                <img src="images/happy-employee-1.jpeg" alt="Employee 2">  
                 <figcaption>Jane Smith - Receptionist </figcaption>  
             </figure>  
             <figure>  
-                <img src="images\happy-employee-3.jpeg" alt="Employee 3">  
+                <img src="images/happy-employee-3.jpeg" alt="Employee 3">  
                 <figcaption>Emily Jones - Guide</figcaption>  
             </figure> 
             <figure>  
-                <img src="images\happy-employee-4.jpeg" alt="Employee 3">  
+                <img src="images/happy-employee-4.jpeg" alt="Employee 3">  
                 <figcaption>Emilia Ralph - Safety Officer</figcaption>  
             </figure>  
             <figure>  
-                <img src="images\happy-employee-5.jpeg" alt="Employee 3">  
+                <img src="images/happy-employee-5.jpeg" alt="Employee 3">  
                 <figcaption>Emily Jones - Customer Service</figcaption>  
             </figure> 
             <figure>  
@@ -66,26 +66,33 @@
             </figure> 
         </div> 
         <h3>Send Us a Message</h3> 
-        <form action="submit_form.php" method="post">  
-            <label for="name">Name:</label>  
-            <input type="text" id="name" name="name" required>  
-            <label for="email">Email:</label>  
-            <input type="email" id="email" name="email" required>  
-            <label for="inquiry">Purpose of Message:</label>  
-            <input type="radio" id="general" name="inquiry" value="general">  
-            <label for="general">General Inquiry</label><br>  
-            <input type="radio" id="reservation" name="inquiry" value="reservation">  
-            <label for="reservation">Reservation Question</label><br>  
-            <input type="radio" id="suggestion" name="inquiry" value="suggestion">  
-            <label for="suggestion">Website Suggestion</label><br>  
-            <label for="message">Message:</label>  
-            <textarea id="message" name="message" required></textarea>  
+        <form action="submit_form.php" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+    <fieldset>
+        <legend>Purpose of Message:</legend>
+        <input type="radio" id="general" name="inquiry" value="general">
+        <label for="general">General Inquiry</label><br>
+
+        <input type="radio" id="reservation" name="inquiry" value="reservation">
+        <label for="reservation">Reservation Question</label><br>
+
+        <input type="radio" id="suggestion" name="inquiry" value="suggestion">
+        <label for="suggestion">Website Suggestion</label><br>
+    </fieldset>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    </form>
             <div class="newsletter-subscription">  
                 <input type="checkbox" id="subscribe" name="subscribe">  
                 <label for="subscribe">Please subscribe me to the monthly newsletter</label>  
             </div>  
             <button type="submit">Send Message</button>  
-        </form>  
     </main>  
     <footer>  
         <p>&copy; 2025 Whitewater Rafting</p>
